@@ -1,0 +1,64 @@
+{
+    "name": "think.studio/nova-entity-select-field",
+    "description": "Laravel Nova Entity Select Field. Package allow implement functionality similar to BelongsTo but for general fields purpose, not for relation one.",
+    "keywords": [
+        "laravel",
+        "select",
+        "entity"
+    ],
+    "homepage": "https://github.com/dev-think-one/nova-entity-select-field",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yaroslav Georgitsa",
+            "email": "yg@think.studio",
+            "homepage": "https://github.com/yaroslawww",
+            "role": "Developer"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "laravel/nova": "^4.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.20",
+        "orchestra/testbench": "^8.5",
+        "phpunit/phpunit": "^10.2",
+        "psalm/plugin-laravel": "^2.8",
+        "vimeo/psalm": "^5.13"
+    },
+    "autoload": {
+        "psr-4": {
+            "NovaEntitySelectField\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NovaEntitySelectField\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NovaEntitySelectField\\ServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "psalm": "vendor/bin/psalm",
+        "test": "XDEBUG_MODE=coverage vendor/bin/phpunit --colors=always",
+        "test-coverage": "XDEBUG_MODE=coverage vendor/bin/phpunit --colors=always --coverage-html coverage",
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

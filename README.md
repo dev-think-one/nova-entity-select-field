@@ -7,7 +7,7 @@
 [![Code Coverage](https://scrutinizer-ci.com/g/dev-think-one/nova-entity-select-field/badges/coverage.png?b=main)](https://scrutinizer-ci.com/g/dev-think-one/nova-entity-select-field/?branch=main)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/dev-think-one/nova-entity-select-field/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/dev-think-one/nova-entity-select-field/?branch=main)
 
-Package allow implement functionality similar to "BelongsTo" but for general fields purpose, not for relation one.
+Package allow implement functionality similar to "BelongsTo" but for general fields purpose, not for relation one (for example flexible content).
 
 ![preview-form.png](docs%2Fassets%2Fpreview-form.png)
 ![preview-details.png](docs%2Fassets%2Fpreview-details.png)

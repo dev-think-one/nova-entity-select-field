@@ -9,6 +9,10 @@
 
 Package allow implement functionality similar to "BelongsTo" but for general fields purpose, not for relation one.
 
+![preview-form.png](docs%2Fassets%2Fpreview-form.png)
+![preview-details.png](docs%2Fassets%2Fpreview-details.png)
+![preview-index.png](docs%2Fassets%2Fpreview-index.png)
+
 | Nova | Package |
 |------|------|
 | V4   | V1   |

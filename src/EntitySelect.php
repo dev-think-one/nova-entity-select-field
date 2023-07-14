@@ -8,6 +8,10 @@ use Laravel\Nova\Http\Requests\NovaRequest;
 use Laravel\Nova\Nova;
 use Laravel\Nova\Resource;
 
+/**
+ * @psalm-suppress MethodSignatureMismatch
+ * @method static static make(string $entityResource, ?string $name = null, ?string $attribute = null, callable|null $resolveCallback = null)
+ */
 class EntitySelect extends Field
 {
     use Searchable;
@@ -62,7 +66,7 @@ class EntitySelect extends Field
 
         $currentEntity = $this->entityResource::newModel()::query()->whereKey($this->value)->first();
 
-        if($currentEntity) {
+        if ($currentEntity) {
             $this->displayValue = $currentEntity->$titleColumn;
         }
     }
